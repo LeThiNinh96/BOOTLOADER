@@ -1,0 +1,26 @@
+13:51:30 **** Build of configuration Debug for project FreeRTOS ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'UART1_Log':
+../Core/Src/main.c:174:16: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  174 |  int msg_len = strlen(send_buff);
+      |                ^~~~~~
+../Core/Src/main.c:174:16: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:27:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   26 | #include <stdarg.h>
+  +++ |+#include <string.h>
+   27 | /* USER CODE END Includes */
+arm-none-eabi-gcc -o "FreeRTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\EMBEDDED C\BOOTLOADER\FreeRTOS\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FreeRTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: FreeRTOS.elf
+ 
+arm-none-eabi-size   FreeRTOS.elf 
+arm-none-eabi-objdump -h -S  FreeRTOS.elf  > "FreeRTOS.list"
+   text	   data	    bss	    dec	    hex	filename
+  34400	    488	  20376	  55264	   d7e0	FreeRTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: FreeRTOS.list
+ 
+
+13:51:33 Build Finished. 0 errors, 2 warnings. (took 3s.287ms)
+

@@ -1,0 +1,3 @@
+Custom_I2C.c:9:6:I2C1_Init	1
+Custom_I2C.c:41:9:I2C1_Read	11
+Custom_I2C.c:80:6:I2C1_Write	9

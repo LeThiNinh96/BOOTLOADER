@@ -1,0 +1,11 @@
+main.c:16:6:SysTick_Handler	1
+main.c:20:6:system_tick_init	1
+main.c:29:6:Custom_delay	2
+main.c:36:6:UART1_Init	1
+main.c:58:6:DMA_Init	1
+main.c:80:6:DMA2_Stream2_IRQHandler	1
+main.c:87:6:UART1_Send	3
+main.c:97:6:UART1_Log	2
+main.c:119:6:tim1_init_1sec	1
+main.c:139:6:TIM1_UP_TIM10_IRQHandler	1
+main.c:146:5:main	1

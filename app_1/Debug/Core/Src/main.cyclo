@@ -1,0 +1,8 @@
+main.c:4:6:Leds_init	1
+main.c:35:6:Leds_ctrl	2
+main.c:48:6:button_init	1
+main.c:58:6:button_get_state	1
+main.c:66:6:SysTick_Handler	1
+main.c:70:6:system_tick_init	1
+main.c:79:6:Custom_delay	2
+main.c:84:5:main	1

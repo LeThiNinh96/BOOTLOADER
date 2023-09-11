@@ -1,0 +1,13 @@
+main.c:12:6:SysTick_Handler	1
+main.c:16:6:system_tick_init	1
+main.c:25:6:Custom_delay	2
+main.c:32:6:UART1_Init	1
+main.c:54:6:DMA_Init	1
+main.c:76:6:DMA2_Stream2_IRQHandler	1
+main.c:83:6:UART1_Send	3
+main.c:93:6:UART1_Log	2
+main.c:102:44:Erase	6
+main.c:130:45:Program	5
+main.c:154:45:reset_system	1
+main.c:158:45:update_firmware	1
+main.c:164:5:main	2

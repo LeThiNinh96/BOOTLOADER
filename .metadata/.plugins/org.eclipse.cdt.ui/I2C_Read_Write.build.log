@@ -1,0 +1,26 @@
+23:36:38 **** Incremental Build of configuration Debug for project I2C_Read_Write ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'I2C1_Read':
+../Core/Src/main.c:87:10: warning: unused variable 'add_recv' [-Wunused-variable]
+   87 |  uint8_t add_recv = *I2C1_DR;
+      |          ^~~~~~~~
+../Core/Src/main.c:77:11: warning: unused variable 'temp1' [-Wunused-variable]
+   77 |  uint32_t temp1 = *I2C1_SR2;
+      |           ^~~~~
+../Core/Src/main.c:53:11: warning: unused variable 'temp' [-Wunused-variable]
+   53 |  uint32_t temp = *I2C1_SR2;
+      |           ^~~~
+../Core/Src/main.c: In function 'I2C1_Write':
+../Core/Src/main.c:107:11: warning: unused variable 'temp2' [-Wunused-variable]
+  107 |  uint32_t temp2 = *I2C1_SR2;
+      |           ^~~~~
+arm-none-eabi-gcc -o "I2C_Read_Write.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\EMBEDDED C\BOOTLOADER\I2C_Read_Write\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="I2C_Read_Write.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.12.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.200.202301161003\tools\arm-none-eabi\bin\ld.exe: ./Core/Startup/startup_stm32f411vetx.o: in function `LoopFillZerobss':
+E:/EMBEDDED C/BOOTLOADER/I2C_Read_Write/Debug/../Core/Startup/startup_stm32f411vetx.s:99: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: I2C_Read_Write.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+23:36:39 Build Failed. 3 errors, 4 warnings. (took 918ms)
+

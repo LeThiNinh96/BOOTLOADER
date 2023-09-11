@@ -1,0 +1,12 @@
+main.c:4:6:Leds_init	1
+main.c:35:6:Leds_ctrl	2
+main.c:48:6:button_init	1
+main.c:58:6:button_get_state	1
+main.c:66:6:SysTick_Handler	1
+main.c:70:6:system_tick_init	1
+main.c:79:6:Custom_delay	2
+main.c:85:6:UART_init	1
+main.c:119:6:UART_Send_Byte	3
+main.c:134:9:UART_Recv_Byte	2
+main.c:147:6:USART2_IRQHandler	2
+main.c:155:5:main	2

@@ -1,0 +1,10 @@
+22:33:31 **** Incremental Build of configuration Release for project Update_firmware ****
+make -j8 all 
+arm-none-eabi-size   Update_firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1320	      8	   7424	   8752	   2230	Update_firmware.elf
+Finished building: default.size.stdout
+ 
+
+22:33:32 Build Finished. 0 errors, 0 warnings. (took 149ms)
+

@@ -1,0 +1,9 @@
+../Core/Src/main.c:16:6:SysTick_Handler	4	static
+../Core/Src/main.c:20:6:system_tick_init	16	static
+../Core/Src/main.c:29:6:Custom_delay	16	static
+../Core/Src/main.c:36:6:UART1_Init	40	static
+../Core/Src/main.c:58:6:DMA_Init	32	static
+../Core/Src/main.c:80:6:DMA2_Stream2_IRQHandler	16	static
+../Core/Src/main.c:87:6:UART1_Send	24	static
+../Core/Src/main.c:97:6:UART1_Log	24	static
+../Core/Src/main.c:114:5:main	32	static
